@@ -199,4 +199,143 @@
 //
 //Call phoneDetails() for both
 
-fun main()
+//class Phone
+//{
+//    var brand:String="Unknown"
+//    var model:String="Unknown"
+//    var price:Double=0.0
+//    constructor(brand:String)
+//    {
+//        this.brand=brand
+//    }
+//    constructor(brand: String,model:String,price:Double)
+//    {
+//        this.brand=brand
+//        this.model=model
+//        this.price=price
+//    }
+//    fun Phonedetails()
+//    {
+//        println("Brand: $brand")
+//        println("Model: $model")
+//        println("Price: $price")
+//    }
+//}
+//
+//fun main()
+//{
+//    val phone1=Phone(brand = "Samsung")
+//    val phone2=Phone(brand="Google", model ="Pixel 9A", price = 5200.00)
+//    phone1.Phonedetails()
+//    phone2.Phonedetails()
+//}
+
+//Question##04
+
+//✅ Question 04: Create a UserProfile class with optional social info
+//🧠 Requirements:
+//Class Name: UserProfile
+//
+//Properties:
+//
+//username: String
+//
+//email: String
+//
+//bio: String
+//
+//isVerified: Boolean
+//
+//Constructors:
+//First constructor: accepts only username and email
+//
+//Second constructor: accepts all four properties
+//
+//Function:
+//profileSummary()
+//👉 Print something like:
+//"Username: john_doe, Email: john@example.com, Bio: Hello Kotlin!, Verified: true"
+//
+//In main():
+//Create one user with only username and email
+//
+//Create another user with all properties
+//
+//Call profileSummary() on both
+//
+
+//class UserProfile
+//{
+//    var username:String="unknown"
+//    var email:String="unknown"
+//    var bio :String="unknown"
+//    var isVerified:Boolean=true
+//
+//    constructor(username:String,email:String)
+//    {
+//        this.username=username
+//        this.email=email
+//    }
+//    constructor(username: String,email: String,bio:String,isVerified:Boolean)
+//    {
+//        this.username=username
+//        this.email=email
+//        this.bio=bio
+//        this.isVerified=isVerified
+//    }
+//    fun profileSummery()
+//    {
+//        println("Username: $username")
+//        println("Email: $email")
+//        println("Bio: $bio")
+//        println("Is Verified: $isVerified")
+//    }
+//
+//}
+//
+//fun main()
+//{
+//    val userprofile1=UserProfile(username = "talhashakeel123", email = "talhshakeeel123@gmail.com")
+//
+//    val userprofile2=UserProfile(username = "talhashakeel123", email = "talhshakeeel123@gmail.com", bio = "Hello Kotlin!", isVerified = true)
+//
+//    userprofile1.profileSummery()
+//    userprofile2.profileSummery()
+//}
+
+//----------------------------------INIT-------------------------------
+//class Temperature {
+//    var celsius: Double = 0.0
+//        get() {
+//            println("Getting temperature...")
+//            return field
+//        }
+//        set(value) {
+//            println("Setting temperature...")
+//            field = value
+//        }
+//}
+//
+//fun main() {
+//    val temp = Temperature()
+//    temp.celsius = 36.6  // Custom setter runs
+//    println(temp.celsius)  // Custom getter runs
+//}
+
+class Temperature{
+    var celsius:Double=0.0
+        get(){
+            println("Getting temperature")
+            return field
+        }
+        set(value) {
+            println("Setting temperature...")
+            field=value
+        }
+    fun main()
+    {
+        val temp=Temperature()
+        temp.celsius=36.6
+    }
+
+}
